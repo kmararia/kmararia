@@ -47,7 +47,7 @@ jobs:
       - name: Update contribution stats
         run: /tmp/github-contrib-stats -u ${{ github.repository_owner }} --update contribution.md
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Push utilities to output branch
         run: |
