@@ -54,6 +54,6 @@ jobs:
           git config user.name 'github-actions[kev-bot]'
           git config user.email 'github-actions[kev-bot]@users.noreply.github.com'
           git checkout -B refresh-profile
-          git add utils/
+          git add utils/ contribution.md
           git commit -m "refresh 3D profile utils" --allow-empty || echo "No changes"
           git push origin refresh-profile --force
