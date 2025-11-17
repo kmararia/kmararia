@@ -33,10 +33,17 @@ jobs:
           tar -xvf /tmp/github-contrib-stats.tar.gz -C /tmp && \
           chmod +x /tmp/github-contrib-stats
 
-      - name: Update contribution stats
+      - name: Set up contribution.md file
         run: |
-          touch contribution.md
-          /tmp/github-contrib-stats -u ${{ github.repository_owner }} --update contribution.md
+          cat > contribution.md <<EOL
+          <!-- BEGIN:created_repos -->
+          <!-- END:created_repos -->
+          <!-- BEGIN:contributions -->
+          <!-- END:contributions -->
+          EOL
+
+      - name: Update contribution stats
+        run: /tmp/github-contrib-stats -u ${{ github.repository_owner }} --update contribution.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
