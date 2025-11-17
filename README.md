@@ -1,5 +1,5 @@
 <p align="center">
-  <img height="500" src="https://raw.githubusercontent.com/kmararia/kmararia/output-3d-contrib/utils/night.svg" />
+  <img height="500" src="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/night.svg" />
 </p>
 
 <p align="center">
