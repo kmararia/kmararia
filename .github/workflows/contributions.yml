@@ -34,7 +34,9 @@ jobs:
           chmod +x /tmp/github-contrib-stats
 
       - name: Update contribution stats
-        run: /tmp/github-contrib-stats -u ${{ github.repository_owner }} --update contribution.md
+        run: |
+          touch contribution.md
+          /tmp/github-contrib-stats -u ${{ github.repository_owner }} --update contribution.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
