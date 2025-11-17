@@ -1,7 +1,7 @@
 [
     {
         "type": "normal",
-        "fileName": "day.svg",
+        "fileName": "utils/day.svg",
         "backgroundColor": "#ffffff",
         "foregroundColor": "#00000f",
         "strongColor": "#111133",
@@ -18,7 +18,7 @@
     },
     {
         "type": "rainbow",
-        "fileName": "night.svg",
+        "fileName": "utils/night.svg",
         "backgroundColor": "#00000f",
         "foregroundColor": "#eeeeff",
         "strongColor": "rgb(255,200,55)",
