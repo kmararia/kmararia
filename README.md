@@ -7,6 +7,6 @@
 </p>
 
 <p align="center">
-  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kmararia&theme=gruvbox&show_icons=true&exclude_repo=kmararia.github.io,resume,notes" />
-  <img height="200" src="https://github-readme-stats.vercel.app/api?username=kmararia&theme=codeSTACKr&count_private=true&include_all_commits=true&show_icons=true&custom_title=Kev%27s%20Stats" />
+  <img height="200" src="https://github-readme-stats-orpin-eight-79.vercel.app/api/top-langs/?username=kmararia&theme=gruvbox&show_icons=true&exclude_repo=kmararia.github.io,resume,notes" />
+  <img height="200" src="https://github-readme-stats-orpin-eight-79.vercel.app/api?username=kmararia&theme=codeSTACKr&count_private=true&include_all_commits=true&show_icons=true&custom_title=Kev%27s%20Stats" />
 </p>
