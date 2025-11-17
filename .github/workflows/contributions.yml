@@ -40,12 +40,14 @@ jobs:
           <!-- END:created_repos -->
           <!-- BEGIN:contributions -->
           <!-- END:contributions -->
+          <!-- BEGIN:contributed -->
+          <!-- END:contributed -->
           EOL
 
       - name: Update contribution stats
         run: /tmp/github-contrib-stats -u ${{ github.repository_owner }} --update contribution.md
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
       - name: Push utilities to output branch
         run: |
