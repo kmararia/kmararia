@@ -40,13 +40,10 @@ jobs:
 
 
       - name: Push utilities to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: refresh-profile
-          build_dir: builds
-          committer: "github-actions[kev-bot] <github-actions[kev-bot]@users.noreply.github.com>"
-          author: "github-actions[kev-bot] <github-actions[kev-bot]@users.noreply.github.com>"
-          commit_message: "refresh 3D profile utils"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+        run: |
+          git config user.name 'github-actions[kev-bot]'
+          git config user.email 'github-actions[kev-bot]@users.noreply.github.com'
+          git checkout -B refresh-profile
+          git add utils/
+          git commit -m "refresh 3D profile utils" --allow-empty || echo "No changes"
+          git push origin refresh-profile --force
