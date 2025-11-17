@@ -1,5 +1,5 @@
 <p align="center">
-  <img height="500" src="./profile-3d.svg" />
+  <img height="500" src="https://raw.githubusercontent.com/kmararia/kmararia/output-3d-contrib/utils/profile-3d.svg" />
 </p>
 
 <p align="center">
