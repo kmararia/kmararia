@@ -21,11 +21,6 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: conf/3d-contrib-settings.json
 
-      - name: Move files
-        run: |
-          mv ./profile-3d-contrib/profile-night-view.svg ./utils/profile-3d.svg
-          rm -rf ./profile-3d-contrib
-
       - name: Download github-contrib-stats
         run: |
           curl -sSL --output /tmp/github-contrib-stats.tar.gz https://github.com/kmararia/github-contrib-stats/releases/latest/download/github-contrib-stats-x86_64-unknown-linux-gnu.tar.gz && \
