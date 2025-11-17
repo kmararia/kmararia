@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -23,7 +23,7 @@ jobs:
 
       - name: Move files
         run: |
-          mkdir -p ./utils
+          mkdir -p ./utils ./builds
           mv ./profile-3d-contrib/* ./utils/
           rm -rf ./profile-3d-contrib
 
@@ -42,11 +42,11 @@ jobs:
       - name: Push utilities to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: refresh-3d-profile
-          build_dir: profile-3d-contrib
+          target_branch: refresh-profile
+          build_dir: builds
+          committer: "github-actions[kev-bot] <github-actions[kev-bot]@users.noreply.github.com>"
+          author: "github-actions[kev-bot] <github-actions[kev-bot]@users.noreply.github.com>"
           commit_message: "refresh 3D profile utils"
-          user_name: "github-actions[kev-bot]"
-          user_email: "github-actions[kev-bot]@users.noreply.github.com"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
