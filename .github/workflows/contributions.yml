@@ -19,11 +19,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-          SETTING_JSON: ./3d-profile-settings.json
+          SETTING_JSON: conf/3d-contrib-settings.json
 
       - name: Move files
         run: |
-          mv ./profile-3d-contrib/profile-3d.svg ./profile-3d.svg
+          mv ./profile-3d-contrib/profile-night-view.svg ./utils/profile-3d.svg
           rm -rf ./profile-3d-contrib
 
       - name: Download github-contrib-stats
@@ -37,10 +37,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Add & Commit
-        run: |
-          git config user.name 'github-actions[kev-bot]'
-          git config user.email 'github-actions[kev-bot]@users.noreply.github.com'
-          git add -A .
-          git commit -m "Refresh readme daily"
-          git push
+
+      - name: Push utilities to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: refresh-3d-profile
+          build_dir: profile-3d-contrib
+          commit_message: "refresh 3D profile utils"
+          user_name: "github-actions[kev-bot]"
+          user_email: "github-actions[kev-bot]@users.noreply.github.com"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
