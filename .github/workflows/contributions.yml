@@ -1,0 +1,46 @@
+name: Refresh profile readme
+
+on:
+  schedule:
+    # Run at 0 am every day
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Generate 3D contribution profile
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: ./3d-profile-settings.json
+
+      - name: Move files
+        run: |
+          mv ./profile-3d-contrib/profile-3d.svg ./profile-3d.svg
+          rm -rf ./profile-3d-contrib
+
+      - name: Download github-contrib-stats
+        run: |
+          curl -sSL --output /tmp/github-contrib-stats.tar.gz https://github.com/kmararia/github-contrib-stats/releases/latest/download/github-contrib-stats-x86_64-unknown-linux-gnu.tar.gz && \
+          tar -xvf /tmp/github-contrib-stats.tar.gz -C /tmp && \
+          chmod +x /tmp/github-contrib-stats
+
+      - name: Update contribution stats
+        run: /tmp/github-contrib-stats -u ${{ github.repository_owner }} --update contribution.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Add & Commit
+        run: |
+          git config user.name 'github-actions[kev-bot]'
+          git config user.email 'github-actions[kev-bot]@users.noreply.github.com'
+          git add -A .
+          git commit -m "Refresh readme daily"
+          git push
