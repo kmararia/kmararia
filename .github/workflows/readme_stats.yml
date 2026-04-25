@@ -19,7 +19,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=codeSTACKr&count_private=true&include_all_commits=true&custom_title=Kev%27s%20Stats
           path: cards/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -27,7 +27,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=gruvbox&show_icons=true&exclude_repo=kmararia.github.io,resume,notes
           path: cards/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
