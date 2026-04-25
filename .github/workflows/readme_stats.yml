@@ -2,21 +2,41 @@ name: Update README stats cards
 
 on:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "0 15 * * *"
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Generate stats card
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true
-          path: stats/stats.svg
+          path: cards/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6
+          path: cards/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=readme-tools&repo=github-readme-stats
+          path: cards/pin-readme-tools-github-readme-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit cards
@@ -24,6 +44,6 @@ jobs:
           git config user.name "github-actions[kev-bot]"
           git config user.email "github-actions[kev-bot]@users.noreply.github.com"
           git checkout -B refresh-profile
-          git add stats/*.svg
+          git add cards/*.svg
           git commit -m "bot(readme): update README stats cards" || exit 0
           git push origin refresh-profile --force
