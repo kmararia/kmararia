@@ -22,7 +22,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PROFILE_PAT }}
           USERNAME: ${{ github.repository_owner }}
-          SETTING_JSON: conf/3d-contrib-settings.json
+          SETTING_JSON: conf/3d-profile-configs.json
 
       - name: Move files
         run: |
