@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          ref: refresh-profile
+          ref: svg-store
 
       # Night versions of the cards
       - name: Generate stats card
@@ -85,4 +85,4 @@ jobs:
           git config user.email "github-actions[kev-bot]@users.noreply.github.com"
           git add utils/*.svg
           git commit -m "bot(readme): refresh profile stats cards" || exit 0
-          git push origin refresh-profile --force
+          git push origin svg-store --force

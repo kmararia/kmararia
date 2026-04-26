@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          ref: refresh-profile
+          ref: svg-store
 
       - name: Generate 3D contribution profile
         uses: yoshi389111/github-profile-3d-contrib@latest
@@ -58,4 +58,4 @@ jobs:
           git config user.email 'github-actions[kev-bot]@users.noreply.github.com'
           git add utils/ contribution.md
           git commit -m "bot(build-svgs): refresh 3D commit profile" --allow-empty || echo "No changes"
-          git push origin refresh-profile --force
+          git push origin svg-store --force
