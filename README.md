@@ -7,6 +7,8 @@
 </p>
 
 <p align="center">
-  <img height="200" src="https://github-readme-stats-orpin-eight-79.vercel.app/api/top-langs/?username=kmararia&theme=gruvbox&show_icons=true&exclude_repo=kmararia.github.io,resume,notes" />
+  <picture height="200">
+	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/top-langs.svg" />
+  </picture>
   <img height="200" src="https://github-readme-stats-orpin-eight-79.vercel.app/api?username=kmararia&theme=codeSTACKr&count_private=true&include_all_commits=true&show_icons=true&custom_title=Kev%27s%20Stats" />
 </p>
