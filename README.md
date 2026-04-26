@@ -1,16 +1,23 @@
 <p align="center" >
+<!-- Commits chart -->
 	<picture>
-	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/night.svg" />
-	  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/day.svg" />
-	  <img alt="github profile contributions chart" src="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/day.svg" />
+	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/commits-night.svg" />
+	  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/commits-day.svg" />
+	  <img alt="github profile contributions chart" src="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/commits-day.svg" />
 	</picture>
 </p>
 
-<p align="center">
-  <picture height="200">
-	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/top-langs.svg" />
-  </picture>
-  <picture height="200">
-	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/stats.svg" />
-  </picture>
+<p align="center" height="200">
+<!-- Top languages -->
+	<picture>
+	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/languages-night.svg" />
+	  <source media="(prefers-color-scheme: light)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/languages-day.svg" />
+	  <img alt="github profile languages" src="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/languages-day.svg" />
+  	</picture>
+<!-- Personal statistics -->
+  	<picture>
+	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/stats-night.svg" />
+	  <source media="(prefers-color-scheme: light)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/stats-day.svg" />
+	  <img alt="github profile statistics" src="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/stats-day.svg" />
+  	</picture>
 </p>
