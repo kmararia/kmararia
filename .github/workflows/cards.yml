@@ -39,7 +39,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=blue-green&count_private=true&include_all_commits=true&custom_title=Kev%27s%20Stats&hide_border=true
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=moltack&count_private=true&include_all_commits=true&custom_title=Kev%27s%20Stats&hide_border=true
           path: utils/stats-day.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -47,7 +47,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=great-gatsby&show_icons=true&hide_border=true
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=swift&show_icons=true&hide_border=true
           path: utils/languages-day.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
