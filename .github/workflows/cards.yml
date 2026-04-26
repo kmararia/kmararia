@@ -22,7 +22,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=blue-green&count_private=true&include_all_commits=true&custom_title=Kev%27s%20Stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=blue-green&count_private=true&include_all_commits=true&custom_title=Kev%27s%20Stats&hide_border=true
           path: utils/stats-night.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -39,7 +39,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=blue-green&count_private=true&include_all_commits=true&custom_title=Kev%27s%20Stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=blue-green&count_private=true&include_all_commits=true&custom_title=Kev%27s%20Stats&hide_border=true
           path: utils/stats-day.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -56,5 +56,5 @@ jobs:
           git config user.name "github-actions[kev-bot]"
           git config user.email "github-actions[kev-bot]@users.noreply.github.com"
           git add utils/*.svg
-          git commit -m "bot(readme): update README stats cards" || exit 0
+          git commit -m "bot(readme): refresh profile stats cards" || exit 0
           git push origin refresh-profile --force
