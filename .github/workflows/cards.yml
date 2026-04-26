@@ -29,6 +29,7 @@ jobs:
             &include_all_commits=true\
             &include_all_commits=true\
             &custom_title=Kev%27s%20GitHub%20Stats\
+            &show=reviews,prs_merged\
             &hide_border=true"
           path: utils/stats-night.svg
           token: ${{ secrets.GH_PROFILE_PAT }}
@@ -59,6 +60,7 @@ jobs:
             &include_all_commits=true\
             &include_all_commits=true\
             &custom_title=Kev%27s%20GitHub%20Stats\
+            &show=reviews,prs_merged\
             &hide_border=true"
           path: utils/stats-day.svg
           token: ${{ secrets.GH_PROFILE_PAT }}
