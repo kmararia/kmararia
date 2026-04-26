@@ -1,4 +1,4 @@
-name: Update README stats cards
+name: Set up profile cards
 
 on:
   schedule:
