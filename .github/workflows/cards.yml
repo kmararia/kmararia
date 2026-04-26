@@ -27,7 +27,6 @@ jobs:
             &theme=blue-green\
             &count_private=true\
             &include_all_commits=true\
-            &include_all_commits=true\
             &custom_title=Kev%27s%20GitHub%20Stats\
             &show=reviews,prs_merged\
             &hide_border=true"
@@ -57,7 +56,6 @@ jobs:
             &show_icons=true\
             &theme=moltack\
             &count_private=true\
-            &include_all_commits=true\
             &include_all_commits=true\
             &custom_title=Kev%27s%20GitHub%20Stats\
             &show=reviews,prs_merged\
