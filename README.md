@@ -1,9 +1,9 @@
 <p align="center" >
 <!-- Commits chart -->
 	<picture>
-	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/commits-night.svg" />
+	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/commits-night_rainbow.svg" />
 	  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/commits-day.svg" />
-	  <img alt="github profile contributions chart" src="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/commits-day.svg" />
+	  <img alt="github profile contributions chart" src="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/commits-night.svg" />
 	</picture>
 </p>
 
