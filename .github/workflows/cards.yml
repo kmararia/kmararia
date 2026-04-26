@@ -57,4 +57,4 @@ jobs:
           git config user.email "github-actions[kev-bot]@users.noreply.github.com"
           git add utils/*.svg
           git commit -m "bot(readme): update README stats cards" || exit 0
-          git push origin refresh-profile
+          git push origin refresh-profile --force
