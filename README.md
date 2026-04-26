@@ -10,14 +10,14 @@
 <p align="center" height="200">
 <!-- Top languages -->
 	<picture>
-	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/languages-night.svg" />
-	  <source media="(prefers-color-scheme: light)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/languages-day.svg" />
-	  <img alt="github profile languages" src="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/languages-day.svg" />
+	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/languages-night.svg" />
+	  <source media="(prefers-color-scheme: light)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/languages-day.svg" />
+	  <img alt="github profile languages" src="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/languages-day.svg" />
   	</picture>
 <!-- Personal statistics -->
   	<picture>
-	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/stats-night.svg" />
-	  <source media="(prefers-color-scheme: light)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/stats-day.svg" />
-	  <img alt="github profile statistics" src="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/cards/stats-day.svg" />
+	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/stats-night.svg" />
+	  <source media="(prefers-color-scheme: light)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/stats-day.svg" />
+	  <img alt="github profile statistics" src="https://raw.githubusercontent.com/kmararia/kmararia/refresh-profile/utils/stats-day.svg" />
   	</picture>
 </p>

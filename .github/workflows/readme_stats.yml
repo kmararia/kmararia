@@ -14,13 +14,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: refresh-profile
 
+      # Night versions of the cards
       - name: Generate stats card
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&theme=blue-green&count_private=true&include_all_commits=true&custom_title=Kev%27s%20Stats
-          path: cards/stats.svg
+          path: utils/stats-night.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate top languages card
@@ -28,22 +31,30 @@ jobs:
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=great-gatsby&show_icons=true&hide_border=true
-          path: cards/top-langs.svg
+          path: utils/languages-night.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate pin card
+      # Day versions of the cards
+      - name: Generate stats card
         uses: readme-tools/github-readme-stats-action@v1
         with:
-          card: pin
-          options: username=readme-tools&repo=github-readme-stats
-          path: cards/pin-readme-tools-github-readme-stats.svg
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=blue-green&count_private=true&include_all_commits=true&custom_title=Kev%27s%20Stats
+          path: utils/stats-day.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=great-gatsby&show_icons=true&hide_border=true
+          path: utils/languages-day.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit cards
         run: |
           git config user.name "github-actions[kev-bot]"
           git config user.email "github-actions[kev-bot]@users.noreply.github.com"
-          git checkout -B refresh-profile
-          git add cards/*.svg
+          git add utils/*.svg
           git commit -m "bot(readme): update README stats cards" || exit 0
-          git push origin refresh-profile --force
+          git push origin refresh-profile
