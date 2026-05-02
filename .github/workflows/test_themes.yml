@@ -182,3 +182,11 @@ jobs:
             &hide_border=true"
           path: tests_themes/stats-vision-friendly-dark.svg
           token: ${{ secrets.GH_PROFILE_PAT }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[kev-bot]"
+          git config user.email "github-actions[kev-bot]@users.noreply.github.com"
+          git add tests_themes/*.svg
+          git commit -m "bot(readme): refresh profile stats cards" || exit 0
+          git push origin svg-store --force
