@@ -24,7 +24,7 @@ jobs:
           card: stats
           options: "username=${{ github.repository_owner }}\
             &show_icons=true\
-            &theme=dark\
+            &theme=gruvbox\
             &count_private=true\
             &include_all_commits=true\
             &custom_title=Kev%27s%20GitHub%20Stats\
