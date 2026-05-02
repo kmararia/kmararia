@@ -9,11 +9,11 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Kev's GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Stars Earned: 4, Total Commits  : 259, Total PRs: 201, Total PRs Merged: 184, Total PRs Reviewed: 0, Total Issues: 91, Contributed to (last year): 1</desc>
+        <desc id="descId">Total Stars Earned: 4, Total Commits  : 263, Total PRs: 201, Total PRs Merged: 184, Total PRs Reviewed: 0, Total Issues: 91, Contributed to (last year): 1</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #fabd2f;
+            fill: #ff652f;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
           @supports(-moz-appearance: auto) {
@@ -22,7 +22,7 @@
           }
           
     .stat {
-      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #8ec07c;
+      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #ffffff;
     }
     @supports(-moz-appearance: auto) {
       /* Selector detects Firefox */
@@ -33,7 +33,7 @@
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
     .rank-text {
-      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #8ec07c;
+      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ffffff;
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
     .rank-percentile-header {
@@ -46,18 +46,18 @@
     .not_bold { font-weight: 400 }
     .bold { font-weight: 700 }
     .icon {
-      fill: #fe8019;
+      fill: #FFE400;
       display: block;
     }
 
     .rank-circle-rim {
-      stroke: #fabd2f;
+      stroke: #ff652f;
       fill: none;
       stroke-width: 6;
       opacity: 0.2;
     }
     .rank-circle {
-      stroke: #fabd2f;
+      stroke: #ff652f;
       stroke-dasharray: 250;
       fill: none;
       stroke-width: 6;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 154.0313680838025;
+        stroke-dashoffset: 153.93444987660612;
       }
     }
   
@@ -109,9 +109,9 @@
           y="0.5"
           rx="4.5"
           height="99%"
-          stroke="#e4e2e2"
+          stroke="#0c1a25"
           width="466"
-          fill="#282828"
+          fill="#09131B"
           stroke-opacity="0"
         />
 
@@ -177,7 +177,7 @@
         x="219.01"
         y="12.5"
         data-testid="commits"
-      >259</text>
+      >263</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
