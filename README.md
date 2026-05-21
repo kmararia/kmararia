@@ -8,8 +8,11 @@
 </p>
 
 <details>
-	
-<summary>More Details</summary>  
+
+<summary>
+	<code style="color : green">More Details</code>
+</summary>  
+
 <p align="center" height="200">
 	<!-- Top languages -->
 	<picture>
