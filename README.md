@@ -1,5 +1,5 @@
 <p align="center" >
-<!-- Commits chart -->
+	<!-- Commits chart -->
 	<picture>
 	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/svg-store/utils/commits-night.svg" />
 	  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kmararia/kmararia/svg-store/utils/commits-day.svg" />
@@ -7,17 +7,22 @@
 	</picture>
 </p>
 
+<details>
+	
+<summary>More Details</summary>  
 <p align="center" height="200">
-<!-- Top languages -->
+	<!-- Top languages -->
 	<picture>
 	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/svg-store/utils/languages-night.svg" />
 	  <source media="(prefers-color-scheme: light)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/svg-store/utils/languages-day.svg" />
 	  <img alt="github profile languages" src="https://raw.githubusercontent.com/kmararia/kmararia/svg-store/utils/languages-day.svg" />
   	</picture>
-<!-- Personal statistics -->
+	<!-- Personal statistics -->
   	<picture>
 	  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/svg-store/utils/stats-night.svg" />
 	  <source media="(prefers-color-scheme: light)"  srcset="https://raw.githubusercontent.com/kmararia/kmararia/svg-store/utils/stats-day.svg" />
 	  <img alt="github profile statistics" src="https://raw.githubusercontent.com/kmararia/kmararia/svg-store/utils/stats-day.svg" />
   	</picture>
 </p>
+
+</details>
