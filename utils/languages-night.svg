@@ -140,7 +140,7 @@
     <g class="stagger" style="animation-delay: 750ms">
       <circle cx="5" cy="6" r="5" fill="#DA5B0B" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Jupyter Notebook 15.44%
+        Jupyter Notebook 15.45%
       </text>
     </g>
   </g><g transform="translate(0, 96)">
@@ -172,8 +172,8 @@
        <g class="stagger" style="animation-delay: 600ms">
         <path
           data-testid="lang-donut"
-          size="57.15"
-          d="M 92.0570105402444 167.7105295343059 A 56.66666666666667 56.66666666666667 0 1 0 116.66666666666667 60"
+          size="57.14"
+          d="M 92.08908720080457 167.72598216061297 A 56.66666666666667 56.66666666666667 0 1 0 116.66666666666667 60"
           stroke="#3572A5"
           fill="none"
           stroke-width="12">
@@ -184,7 +184,7 @@
         <path
           data-testid="lang-donut"
           size="25.78"
-          d="M 66.88969989215568 89.58595969952232 A 56.66666666666667 56.66666666666667 0 0 0 92.0570105402444 167.7105295343059"
+          d="M 66.87269440884192 89.61724083360893 A 56.66666666666667 56.66666666666667 0 0 0 92.08908720080457 167.72598216061297"
           stroke="#e34c26"
           fill="none"
           stroke-width="12">
@@ -194,8 +194,8 @@
        <g class="stagger" style="animation-delay: 800ms">
         <path
           data-testid="lang-donut"
-          size="15.44"
-          d="M 110.87323814404716 60.29692924431912 A 56.66666666666667 56.66666666666667 0 0 0 66.88969989215568 89.58595969952232"
+          size="15.45"
+          d="M 110.87323814404716 60.29692924431912 A 56.66666666666667 56.66666666666667 0 0 0 66.87269440884192 89.61724083360893"
           stroke="#DA5B0B"
           fill="none"
           stroke-width="12">
