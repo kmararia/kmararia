@@ -1,9 +1,9 @@
 <!-- BEGIN:created_repos -->
 | No.   | Name                                                                   | Language         | Stars | Forks | Last Update |
 |-------|------------------------------------------------------------------------|------------------|-------|-------|-------------|
-| 1     | [kmararia](https://github.com/kmararia/kmararia)                       | N/A              | 2     | 0     | 2026-11-22  |
+| 1     | [kmararia](https://github.com/kmararia/kmararia)                       | N/A              | 2     | 0     | 2026-11-24  |
 | 2     | [lemonade-stand](https://github.com/kmararia/lemonade-stand)           | Python           | 2     | 0     | 2026-10-30  |
-| 3     | [analytics-practicum](https://github.com/kmararia/analytics-practicum) | Jupyter Notebook | 1     | 0     | 2026-11-23  |
+| 3     | [analytics-practicum](https://github.com/kmararia/analytics-practicum) | Jupyter Notebook | 1     | 0     | 2026-11-24  |
 | Total |                                                                        |                  | 5     | 0     |             |
 <!-- END:created_repos -->
 <!-- BEGIN:contributions -->
